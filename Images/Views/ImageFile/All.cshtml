@@ -1,0 +1,9 @@
+﻿@model List<string>
+
+
+@foreach (var item in Model)
+{
+	<a href="@item.Replace("Thumbnail","FullScreen")">
+		<img src="@item" />
+	</a>
+}
